@@ -65,8 +65,15 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="education" className="py-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-dark animate-gradient-x" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-16 right-1/3 w-32 h-32 bg-primary/30 rounded-full animate-pulse-glow" />
+        <div className="absolute bottom-24 left-1/4 w-24 h-24 bg-primary/25 rounded-full animate-pulse-glow" style={{ animationDelay: '2s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Education & Learning</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

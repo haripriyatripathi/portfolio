@@ -72,8 +72,15 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-dark animate-gradient-x" />
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-10 w-24 h-24 bg-primary/40 rounded-full animate-float" />
+        <div className="absolute bottom-1/3 right-10 w-32 h-32 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Professional Experience</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -61,8 +61,16 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-section animate-gradient-y" />
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-20 left-1/4 w-36 h-36 bg-primary/25 rounded-full animate-float" />
+        <div className="absolute bottom-32 right-1/4 w-28 h-28 bg-primary/35 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 right-10 w-20 h-20 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

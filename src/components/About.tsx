@@ -21,8 +21,15 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-section animate-gradient-y" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 right-10 w-20 h-20 bg-primary/30 rounded-full animate-pulse-glow" />
+        <div className="absolute bottom-20 left-20 w-16 h-16 bg-primary/25 rounded-full animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

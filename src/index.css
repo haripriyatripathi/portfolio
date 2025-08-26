@@ -8,23 +8,23 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 240 10% 3.9%; /* Dark background instead of white */
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 240 10% 7%; /* Dark cards */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 245 72% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 245 72% 51%;
     --accent-foreground: 0 0% 100%;
@@ -32,8 +32,8 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 240 4% 20%;
+    --input: 240 4% 20%;
     --ring: 245 72% 51%;
 
     /* Custom portfolio colors */
@@ -41,13 +41,17 @@ All colors MUST be HSL.
     --portfolio-black: 0 0% 0%; /* #000000 */
     --portfolio-white: 0 0% 100%; /* white */
     
-    /* Gradients */
+    /* Enhanced Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(245 72% 65%));
     --gradient-hero: linear-gradient(135deg, hsl(var(--portfolio-black)), hsl(var(--portfolio-primary)));
+    --gradient-dark: linear-gradient(135deg, hsl(240 10% 3%), hsl(245 72% 8%));
+    --gradient-section: linear-gradient(180deg, hsl(240 10% 3%) 0%, hsl(245 20% 8%) 50%, hsl(240 10% 3%) 100%);
+    --gradient-animated: linear-gradient(270deg, hsl(var(--portfolio-black)), hsl(var(--portfolio-primary)), hsl(var(--portfolio-black)));
     
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--portfolio-primary) / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(var(--portfolio-black) / 0.1);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--portfolio-primary) / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(var(--portfolio-black) / 0.3);
+    --shadow-glow: 0 0 50px hsl(var(--portfolio-primary) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -73,22 +77,22 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 245 72% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 10%;
+    --muted: 240 4% 15%;
     --muted-foreground: 0 0% 65%;
 
     --accent: 245 72% 51%;
@@ -97,8 +101,8 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
+    --border: 240 4% 20%;
+    --input: 240 4% 20%;
     --ring: 245 72% 51%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

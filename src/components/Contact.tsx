@@ -56,8 +56,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-section animate-gradient-y" />
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-40 h-40 bg-primary/30 rounded-full animate-float" />
+        <div className="absolute bottom-40 right-20 w-32 h-32 bg-primary/25 rounded-full animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '2.5s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Let's Connect</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

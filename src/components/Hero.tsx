@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
-import profileImage from '@/assets/haripriya-profile.jpg';
+import profileImage from '/lovable-uploads/ec8c3ab1-019e-46ee-97f2-a7cf45bccf57.png';
 
 const Hero = () => {
   const socialLinks = [
@@ -23,8 +23,17 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-      <div className="container mx-auto px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-dark animate-gradient-y" />
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full animate-float" />
+        <div className="absolute top-40 right-20 w-24 h-24 bg-primary/15 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-40 left-1/4 w-40 h-40 bg-primary/10 rounded-full animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-primary/25 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
