@@ -9,7 +9,7 @@ const Education = () => {
       institution: 'Jaypee University of Information Technology, Solan',
       degree: 'B.Tech in Computer Science Engineering',
       period: '2023 – 2027',
-      grade: 'SGPA: 7.5 | GPA: 7.0',
+      grade: 'SGPA: 8.5 | GPA: 8.2',
       location: 'Solan, HP',
       description: 'Pursuing comprehensive education in computer science with focus on software engineering fundamentals.',
       icon: '🎓',
